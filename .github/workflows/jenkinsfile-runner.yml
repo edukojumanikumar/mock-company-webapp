@@ -14,4 +14,4 @@ jobs:
     name: Run Jenkinsfile with Jenkinsfile Runner
     steps:
       - uses: actions/checkout@v2
-      - uses: jenkinsci/jenkinsfile-runner-github-actions@v1
+      - uses: jenkinsci/jenkinsfile-runner-github-actions@770d33f3283f6ce79a3d869e087fe43885f96842
