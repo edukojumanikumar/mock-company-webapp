@@ -1,0 +1,17 @@
+name: Jenkinsfile Runner
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Run Jenkinsfile with Jenkinsfile Runner
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jenkinsci/jenkinsfile-runner-github-actions@v1
